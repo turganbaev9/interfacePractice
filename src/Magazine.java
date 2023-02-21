@@ -1,3 +1,5 @@
+import BooksPrintble.Printable;
+
 public class Magazine  implements Printable {
     public String name;
 

@@ -1,3 +1,5 @@
+import BooksPrintble.Printable;
+
 public class Book implements Printable {
     private String name;
 
