@@ -19,21 +19,21 @@ public class Book implements Printable {
     @Override
     public void print() {
         System.out.println("Book ");
-printBooks();
+        printBooks();
 
     }
 
-void printBooks() {
-    Book[] books = new Book[2];
-    books[0] = new Book("История Кыргызстана");
-    books[1] = new Book("Великодержавие");
+    void printBooks() {
+        Book[] books = new Book[2];
+        books[0] = new Book("История Кыргызстана");
+        books[1] = new Book("Великодержавие");
 
-    for (int i = 0; i < books.length; i++) {
-        System.out. println(books[i].getName());
+        for (int i = 0; i < books.length; i++) {
+            if (books[i] instanceof Book) {
+                System.out.println(books[i].getName());
 
 
-
-
+            }
         }
-}
+    }
 }

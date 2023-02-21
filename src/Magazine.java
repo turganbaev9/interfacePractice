@@ -12,7 +12,7 @@ public class Magazine  implements Printable {
     @Override
     public void print() {
         System.out.println("this a Magazine");
-printJournal();
+        printJournal();
     }
 
 
@@ -22,8 +22,11 @@ printJournal();
         magazines[1] = new Magazine("Топ идеи для стартапов");
 
         for (int j = 0; j < magazines.length; j++) {
-            System.out.println(magazines[j].name);
-        }
 
+
+            if (magazines[j] instanceof Magazine) {
+                System.out.println(magazines[j].name);
+            }
+        }
     }
 }
